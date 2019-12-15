@@ -1,0 +1,33 @@
+$nav-color-grey:lightgray;
+$bg-color-orange:orange;
+$container-color-wheat:wheat;
+$translucent-block:rgba(255, 255, 255, 0.61);
+
+
+@mixin img_style {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+@mixin menu-ul {
+    display: flex;
+}
+    
+@mixin menu-ul-li {
+    display: block;
+}
+    
+@mixin menu-ul-li-a {
+    text-decoration: none;
+    font-weight: 600;
+}
+
+@mixin article{
+    padding: 25px;
+    margin: 15px;
+}
+
+
+

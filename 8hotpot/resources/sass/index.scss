@@ -1,0 +1,255 @@
+@import "./guide.scss";
+
+body{
+    margin: 0;
+    header{
+        background-color:$bg-color-orange;
+        .container{
+            .navbar{
+                background-color:$bg-color-orange !important; 
+                padding: 0;
+                .navbar-brand{
+                background-image: url(../images/logo.png);
+                height: 180px;
+                width: 346px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 99;
+             }
+
+            h1{
+                display: none;
+            }
+            .navbar-collapse{
+                background:$container-color-wheat;
+                ul{
+                    li{
+                        font-size: 20px;
+                         a{
+                         display: inline-block;
+                         padding: 15px;
+                    }
+                    }
+                   
+                }
+            }
+        }
+        }
+        
+
+        
+        
+        .banner{
+            z-index: 1;
+            height:80vh;
+            width: 100vw;
+            .swiper-container{
+                width: 100%;
+                height: 100%;
+                .swiper-wrapper{
+                    .swiper-slide{
+                        display: flex;
+                    }
+                    .img1{
+                        background-image: url(../images/bg-2.jpg);
+                        background-color: black;
+                        @include img_style;
+                     
+                    }
+                    .img2{
+                        background-color: black;
+                        background-image: url(../images/bg-3.jpg);
+                        @include img_style;
+                    
+                    }
+                    .img3{
+                        background-color: black;
+                        background-image: url("../images/bg-4.jpg");
+                        @include img_style;
+                    
+                    }
+               
+                }
+            }
+        }
+    }
+
+    main{
+        #brand_story{
+            background-color:$bg-color-orange;
+           
+            .container{
+                padding: 60px;
+                background:$container-color-wheat;
+                
+                h2{
+                    text-align:center;
+                }
+                
+                .text{
+                    padding:30px;
+                    height: 100%;
+                    width: 50%;
+                    .text_2{
+                        margin-top: 20px;
+                    }
+                }
+                .image{
+                   background-image: url(../images/bg-3.jpg);
+                    @include img_style;
+
+                    height: auto;
+                    width: 50%;
+            
+                }
+                    
+            }
+        }
+
+        #hotpot_introduction{
+            background-color: $bg-color-orange;
+            .container{
+                background:$container-color-wheat;
+                width: 100%;
+                padding: 60px;
+                 h2{
+                    text-align:center;
+                }
+                .hot_pot{
+                    display: flex;
+                    justify-content: space-around;
+                    align-items: center;
+                    width: 100%;
+                    height: 60vh;
+                   
+                    .image1{
+                        background-image: url("../images/hotpot-1.jpg");
+                        @include img_style;
+                        width: 30%;
+                        height: 80%;
+
+                    }
+                    .image2{
+                        background-image: url("../images/hotpot-2.jpg");
+                        @include img_style;
+                        width: 30%;
+                        height: 80%;
+                    }
+                    .image3{
+                        background-image: url("../images/hotpot-3.jpg");
+                        @include img_style;
+                        width: 30%;
+                        height: 80%;
+                    }
+                }
+                button{
+                        display:block;
+                        margin:0 auto;
+                        font-size: 25px;
+                }
+            }
+        }
+        #join_us{
+            .bg1{
+                @include img_style;
+                width: 100vw;
+                height:auto;
+                background-image: url("../images/bg-2.jpg");
+                background-attachment: fixed;
+                .block{
+                    width: 100%;
+                    height:20vh;
+                }
+                .adventages{
+                    background-color: $translucent-block;
+                    width: 70%;
+                    margin: 0 auto;
+                    h2{
+                        font-weight: 600;
+                        font-size: 60px;
+                        text-align:center;
+                        padding: 5px 0;
+                    }
+                    .adventages_box{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        width: 100%;
+                        height:100%;
+                        margin: 0 auto;
+                        .adventage1{
+                            width: 40%;
+                            height:70%;
+                            h4{
+                                font-weight: 500;
+                                font-size: 40px; 
+                            }
+                            
+                            p{
+                                font-weight: 300;
+                                font-size: 30px;
+                            }
+                        }
+                        
+                        .adventage2{
+                            width: 40%;
+                            height:70%;
+                            h4{
+                                font-weight: 500;
+                                font-size: 40px; 
+                            }
+                            
+                            p{
+                                font-weight: 300;
+                                font-size: 30px;
+                            }
+                        }
+                        
+                    }
+
+                }
+                .block{
+                    width: 100%;
+                    height:20vh;
+                }
+
+            }
+            .bg2{
+                @include img_style;
+                width: 100vw;
+                height:auto;
+                background-image: url("../images/bg-4.jpg");
+                .block{
+                    width: 100%;
+                    height:20vh;
+                }
+                .way{
+                    background-color: $translucent-block;
+                    width: 70%;
+                    margin: 0 auto;
+                    h2{
+                        font-weight: 600;
+                        font-size: 60px;
+                        text-align:center;
+                        padding: 5px 0;
+                      
+                    }
+                    
+                    p{
+                        font-weight: 400;
+                        font-size: 40px;
+                        text-align:center;
+                        padding: 10px 0;
+                    }
+                }
+                .block{
+                    width: 100%;
+                    height:20vh;
+                }
+            }
+        }
+    }
+   
+    
+}
