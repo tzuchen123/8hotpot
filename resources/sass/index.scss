@@ -1,0 +1,277 @@
+@import "./guide.scss";
+
+* {
+  box-sizing: border-box;
+}
+.container {
+  overflow-y: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: $bg-color-orange;
+  header {
+    background-color: $bg-color-orange;
+    .container {
+      .navbar {
+        background-color: $bg-color-orange !important;
+        padding: 0;
+
+        h1 {
+          display: none;
+        }
+        .navbar-collapse {
+          background: $container-color-wheat1;
+          .navbar-brand {
+            height: 100px;
+            width: 230px;
+            background-image: url(../images/logo-sm.png);
+          }
+          ul {
+            li {
+              font-size: 20px;
+              a {
+                display: inline-block;
+                padding: 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .banner {
+      z-index: 1;
+      height: 80vh;
+      width: 100vw;
+      .swiper-container {
+        width: 100%;
+        height: 100%;
+        .swiper-wrapper {
+          .swiper-slide {
+            display: flex;
+          }
+          .img1 {
+            background-image: url(../images/banner1.jpg);
+            color: white;
+            font-size: 50px;
+            @include img_style;
+          }
+          .img2 {
+            color: white;
+            font-size: 50px;
+            background-image: url(../images/banner2.jpg);
+            @include img_style;
+          }
+          .img3 {
+            color: white;
+            font-size: 50px;
+            background-image: url(../images/banner3.jpg);
+            @include img_style;
+          }
+        }
+      }
+    }
+  }
+
+  main {
+    margin: 0;
+    #brand_story {
+      background-color: $bg-color-orange;
+      .container {
+        padding: 50px;
+        background: $container-color-wheat2;
+
+        h2 {
+          text-align: center;
+          margin-bottom: 15px;
+        }
+
+        .row {
+          .image {
+            background-image: url(../images/banner2.jpg);
+            color: white;
+            font-size: 50px;
+            @include img_style;
+            width: 100%;
+            height: 100%;
+            @media (max-width: 768px) {
+              height: 160px;
+            }
+          }
+          .text1 {
+            padding: 30px;
+            width: 100%;
+          }
+          .text2 {
+            margin-top: 20px;
+            padding: 30px;
+          }
+        }
+      }
+    }
+
+    #hotpot_introduction {
+      background-color: $bg-color-orange;
+      .container {
+        background: $container-color-wheat1;
+        width: 100%;
+        padding: 50px;
+
+        h2 {
+          margin-bottom: 15px;
+          text-align: center;
+        }
+
+        .hot_pot {
+          display: -webkit-box;
+          display: flex;
+          justify-content: space-around;
+          -webkit-box-align: center;
+          align-items: center;
+          width: 100%;
+
+          .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            height: 60vh;
+            margin-top: 15px;
+            margin-bottom: 30px;
+          }
+
+          .image1 {
+            background-image: url(../images/hotpot1.jpg);
+            color: white;
+            font-size: 50px;
+          }
+          .image2 {
+            color: white;
+            font-size: 50px;
+            background-image: url(../images/hotpot2.jpg);
+          }
+          .image3 {
+            color: white;
+            font-size: 50px;
+            background-image: url(../images/hotpot3.jpg);
+          }
+        }
+
+        button {
+          display: block;
+          margin: 0 auto;
+          font-size: 25px;
+        }
+        h6 {
+          text-align: center;
+          color: red;
+        }
+      }
+    }
+    #shops {
+      background-color: $bg-color-orange;
+      .container {
+        h2 {
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        background: $container-color-wheat2;
+        padding: 50px;
+        .content {
+          margin: 20px;
+          .media {
+            background-image: url(../images/fb-logo-icon-png-1.png);
+            @include img_style;
+            height: 50px;
+            width: 50px;
+          }
+        }
+      }
+    }
+
+    #news {
+      background-color: $bg-color-orange;
+      .container {
+        background: $container-color-wheat1;
+        padding: 50px;
+        h2 {
+          margin-bottom: 15px;
+          text-align: center;
+        }
+        .card {
+          background-color: orange;
+          margin: 30px 0;
+          img {
+            max-width: 540px;
+            height: 300px;
+          }
+        }
+      }
+    }
+    #join_us {
+      background-color: orange;
+      .container {
+        background: $container-color-wheat2;
+        padding: 50px;
+        h2 {
+          margin-bottom: 15px;
+          text-align: center;
+        }
+        .text {
+          span {
+            font-size: 25px;
+            font-weight: 600;
+          }
+        }
+        #btn1 {
+          display: block;
+          font-size: 50px;
+          border-radius: 50%;
+          padding: 30px;
+        }
+      }
+    }
+    #googlemap {
+      background-color: $bg-color-orange;
+      .container {
+        padding: 50px;
+        background: $container-color-wheat1;
+        h2 {
+          text-align: center;
+          margin-bottom: 15px;
+        }
+        .content {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          // margin: 5px;
+        }
+      }
+    }
+  }
+
+  footer {
+    box-sizing: border-box;
+    margin: 0;
+    background-color: $bg-color-orange;
+    .container {
+      background: $container-color-wheat2;
+      h5 {
+        text-align: center;
+      }
+      .footerbar li {
+        margin: 0 auto;
+
+        list-style-type: none;
+
+        a {
+          text-decoration: none;
+          color: black;
+        }
+      }
+      #btn2 {
+        display: block;
+        font-size: 15px;
+      }
+    }
+  }
+}

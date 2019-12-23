@@ -1,0 +1,328 @@
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  overflow-y: hidden;
+}
+
+body {
+  margin: 0;
+  background-color: orange;
+}
+
+body header {
+  background-color: orange;
+}
+
+body header .container .navbar {
+  background-color: orange !important;
+  padding: 0;
+}
+
+body header .container .navbar h1 {
+  display: none;
+}
+
+body header .container .navbar .navbar-collapse {
+  background: wheat;
+}
+
+body header .container .navbar .navbar-collapse .navbar-brand {
+  height: 100px;
+  width: 230px;
+  background-image: url(/images/logo-sm.png?cff2dbb6f229a6117c2a822cf0ef397c);
+}
+
+body header .container .navbar .navbar-collapse ul li {
+  font-size: 20px;
+}
+
+body header .container .navbar .navbar-collapse ul li a {
+  display: inline-block;
+  padding: 15px;
+}
+
+body header .banner {
+  z-index: 1;
+  height: 80vh;
+  width: 100vw;
+}
+
+body header .banner .swiper-container {
+  width: 100%;
+  height: 100%;
+}
+
+body header .banner .swiper-container .swiper-wrapper .swiper-slide {
+  display: -webkit-box;
+  display: flex;
+}
+
+body header .banner .swiper-container .swiper-wrapper .img1 {
+  background-image: url(/images/banner1.jpg?a3ca4ec47685aa0b995cc3b1c0db2f66);
+  color: white;
+  font-size: 50px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+body header .banner .swiper-container .swiper-wrapper .img2 {
+  color: white;
+  font-size: 50px;
+  background-image: url(/images/banner2.jpg?79c118373f684dfd08c075ce614cbcc6);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+body header .banner .swiper-container .swiper-wrapper .img3 {
+  color: white;
+  font-size: 50px;
+  background-image: url(/images/banner3.jpg?deaf97cf57676a0e869d4a7c4b5f3ecd);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+body main {
+  margin: 0;
+}
+
+body main #brand_story {
+  background-color: orange;
+}
+
+body main #brand_story .container {
+  padding: 50px;
+  background: rgba(245, 222, 179, 0.8);
+}
+
+body main #brand_story .container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+body main #brand_story .container .row .image {
+  background-image: url(/images/banner2.jpg?79c118373f684dfd08c075ce614cbcc6);
+  color: white;
+  font-size: 50px;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  width: 100%;
+  height: 100%;
+}
+
+@media (max-width: 768px) {
+  body main #brand_story .container .row .image {
+    height: 160px;
+  }
+}
+
+body main #brand_story .container .row .text1 {
+  padding: 30px;
+  width: 100%;
+}
+
+body main #brand_story .container .row .text2 {
+  margin-top: 20px;
+  padding: 30px;
+}
+
+body main #hotpot_introduction {
+  background-color: orange;
+}
+
+body main #hotpot_introduction .container {
+  background: wheat;
+  width: 100%;
+  padding: 50px;
+}
+
+body main #hotpot_introduction .container h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+body main #hotpot_introduction .container .hot_pot {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+  align-items: center;
+  width: 100%;
+}
+
+body main #hotpot_introduction .container .hot_pot .swiper-slide {
+  background-position: center;
+  background-size: cover;
+  height: 60vh;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+body main #hotpot_introduction .container .hot_pot .image1 {
+  background-image: url(/images/hotpot1.jpg?2056e9f80728f47baf081452e1304857);
+  color: white;
+  font-size: 50px;
+}
+
+body main #hotpot_introduction .container .hot_pot .image2 {
+  color: white;
+  font-size: 50px;
+  background-image: url(/images/hotpot2.jpg?551d01280055098cb04de6a0f09ecdf1);
+}
+
+body main #hotpot_introduction .container .hot_pot .image3 {
+  color: white;
+  font-size: 50px;
+  background-image: url(/images/hotpot3.jpg?55c063c4868a4b3628c2d83f2efd3526);
+}
+
+body main #hotpot_introduction .container button {
+  display: block;
+  margin: 0 auto;
+  font-size: 25px;
+}
+
+body main #hotpot_introduction .container h6 {
+  text-align: center;
+  color: red;
+}
+
+body main #shops {
+  background-color: orange;
+}
+
+body main #shops .container {
+  background: rgba(245, 222, 179, 0.8);
+  padding: 50px;
+}
+
+body main #shops .container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+body main #shops .container .content {
+  margin: 20px;
+}
+
+body main #shops .container .content .media {
+  background-image: url(/images/fb-logo-icon-png-1.png?64a2c7accc656b2996eef7e09d3ce451);
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  height: 50px;
+  width: 50px;
+}
+
+body main #news {
+  background-color: orange;
+}
+
+body main #news .container {
+  background: wheat;
+  padding: 50px;
+}
+
+body main #news .container h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+body main #news .container .card {
+  background-color: orange;
+  margin: 30px 0;
+}
+
+body main #news .container .card img {
+  max-width: 540px;
+  height: 300px;
+}
+
+body main #join_us {
+  background-color: orange;
+}
+
+body main #join_us .container {
+  background: rgba(245, 222, 179, 0.8);
+  padding: 50px;
+}
+
+body main #join_us .container h2 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+body main #join_us .container .text span {
+  font-size: 25px;
+  font-weight: 600;
+}
+
+body main #join_us .container #btn1 {
+  display: block;
+  font-size: 50px;
+  border-radius: 50%;
+  padding: 30px;
+}
+
+body main #googlemap {
+  background-color: orange;
+}
+
+body main #googlemap .container {
+  padding: 50px;
+  background: wheat;
+}
+
+body main #googlemap .container h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+body main #googlemap .container .content {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+
+body footer {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: orange;
+}
+
+body footer .container {
+  background: rgba(245, 222, 179, 0.8);
+}
+
+body footer .container h5 {
+  text-align: center;
+}
+
+body footer .container .footerbar li {
+  margin: 0 auto;
+  list-style-type: none;
+}
+
+body footer .container .footerbar li a {
+  text-decoration: none;
+  color: black;
+}
+
+body footer .container #btn2 {
+  display: block;
+  font-size: 15px;
+}
+
