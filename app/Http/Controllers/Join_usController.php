@@ -25,7 +25,7 @@ class Join_usController extends Controller
      */
     public function create()
     {
-       
+
     }
 
     /**

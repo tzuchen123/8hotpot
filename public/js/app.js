@@ -49624,9 +49624,9 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\Users\莊子臻\8hotpot\resources\js\app.js */"./resources/js/app.js");
-__webpack_require__(/*! C:\Users\莊子臻\8hotpot\resources\sass\app.scss */"./resources/sass/app.scss");
-module.exports = __webpack_require__(/*! C:\Users\莊子臻\8hotpot\resources\sass\index.scss */"./resources/sass/index.scss");
+__webpack_require__(/*! C:\Users\user\pratice\resources\js\app.js */"./resources/js/app.js");
+__webpack_require__(/*! C:\Users\user\pratice\resources\sass\app.scss */"./resources/sass/app.scss");
+module.exports = __webpack_require__(/*! C:\Users\user\pratice\resources\sass\index.scss */"./resources/sass/index.scss");
 
 
 /***/ })

@@ -57,6 +57,27 @@
             left: 0;
             right: 0;
         }
+
+        .hvr-float {
+            display: inline-block;
+            vertical-align: middle;
+            -webkit-transform: perspective(1px) translateZ(0);
+            transform: perspective(1px) translateZ(0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            -webkit-transition-duration: 0.3s;
+            transition-duration: 0.3s;
+            -webkit-transition-property: transform;
+            transition-property: transform;
+            -webkit-transition-timing-function: ease-out;
+            transition-timing-function: ease-out;
+        }
+
+        .hvr-float:hover,
+        .hvr-float:focus,
+        .hvr-float:active {
+            -webkit-transform: translateY(-8px);
+            transform: translateY(-8px);
+        }
     </style>
 
 </head>
@@ -65,7 +86,7 @@
     <header>
         <div class="container">
             <nav class="navbar navbar-expand-lg navbar-light bg-light d-flex justify-content-center">
-                <!-- logo照片 -->
+                {{-- logo照片，手機板要消失 --}}
                 <h1>8鍋臭臭鍋</h1>
                 <button class=" navbar-toggler" type="button" data-toggle="collapse"
                     data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -123,7 +144,7 @@
                 <h2>八鍋故事</h2>
                 <div class="row">
                     <div class="col-12 col-md-6 ">
-                        {{-- media query 記得寫縮小的高度 --}}
+                        {{-- media query 記得寫手機板的高度 --}}
                         <div class="image">所有圖片僅供參考</div>
                     </div>
                     <div class="col-12 col-md-6">
@@ -200,7 +221,6 @@
                             <div class="card-body">
                                 <h5 class="card-title">{{$new->title}}</h5>
                                 <p class="card-text">{{$new->content}}</p>
-                                {{-- <a href="#" class="btn btn-primary">Go somewhere</a> --}}
                             </div>
                         </div>
                     </div>
@@ -230,7 +250,7 @@
 
                     </div>
                     <div class="col-12 col-md-6 d-flex  justify-content-center align-items-center">
-                        <button type="button" class="btn btn-danger hvr-underline-from-center" id="btn1"
+                        <button type="button" class="btn btn-danger" id="btn1"
                             onclick="window.open('/join_us', '_blank' ) ">加盟<br>請按我</button>
                     </div>
                 </div>
@@ -279,7 +299,7 @@
                 </li>
                 <li class="item active hvr-shrink">
                     {{-- <a class="nav-link" href="">聯絡我們</a> --}}
-                    <button type="button" class="btn btn-info hvr-underline-from-center" id="btn2"
+                    <button type="button" class="btn btn-info hvr-float" id="btn2"
                         onclick="window.open('/contact_us', '_blank' ) ">聯絡我們</button>
                 </li>
 
@@ -290,12 +310,6 @@
         </div>
 
     </footer>
-    {{--
-            <section id="media_news"></section>
-            <section id="contact_us"></section> --}}
-
-
-
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 
@@ -335,7 +349,7 @@
 
         });
         });
-        
+
     </script>
 
 

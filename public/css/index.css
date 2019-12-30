@@ -9,6 +9,7 @@
 body {
   margin: 0;
   background-color: orange;
+  font-family: "Microsoft JhengHei";
 }
 
 body header {
@@ -32,6 +33,12 @@ body header .container .navbar .navbar-collapse .navbar-brand {
   height: 100px;
   width: 230px;
   background-image: url(/images/logo-sm.png?cff2dbb6f229a6117c2a822cf0ef397c);
+}
+
+@media (max-width: 768px) {
+  body header .container .navbar .navbar-collapse .navbar-brand {
+    display: none;
+  }
 }
 
 body header .container .navbar .navbar-collapse ul li {
@@ -241,6 +248,10 @@ body main #news .container h2 {
 body main #news .container .card {
   background-color: orange;
   margin: 30px 0;
+}
+
+body main #news .container .card:hover {
+  border: 2px green solid;
 }
 
 body main #news .container .card img {
