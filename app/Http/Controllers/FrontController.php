@@ -12,7 +12,7 @@ class FrontController extends Controller
 {
     public function index()
     {
-        $news = News::all();
+        $news = News::orderBy('id', 'desc')->take(4)->get();
         $shops = Shop::all();
         return view('front.index', compact("news", "shops"));
     }
